@@ -1,0 +1,48 @@
+.header-company
+    .header
+        background-image: url('../img/search-header-bg.png')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, 0.60)
+    &__preview
+        padding: 99px 0 108px
+    &__logo
+        width: 234.783px
+        height: 30px
+        margin-bottom: 40px
+    &__title
+        max-height: 114px
+        color: #333
+        font-size: 52px
+        font-weight: 800
+        line-height: 110%
+        margin-bottom: 60px
+    &__row
+        display: flex
+        gap: 20px 65px
+        margin-bottom: 48px
+    &__info
+        span
+            color: #333
+            font-size: 16px
+            font-weight: 400
+            line-height: 180%
+            display: block
+        &--bold
+            span
+                font-weight: 700
+    &__description
+        color: #333
+        font-size: 16px
+        font-weight: 400
+        line-height: 150%
+        max-width: 908px
