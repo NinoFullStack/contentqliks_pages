@@ -1,0 +1,58 @@
+.about
+    padding: 106px 0 110px
+    background-image: url('../img/about-map.png'), url('../img/about-bg.png')
+    background-repeat: no-repeat
+    background-size: contain, cover
+    background-position: right, center
+    &-title
+        color: #FFF
+        font-size: 42px
+        font-weight: 800
+        line-height: 49.5px
+        margin-bottom: 32px
+    &-description
+        color: #FFF
+        font-family: 'Open Sans'
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+        &:not(:last-child)
+            margin-bottom: 20px
+    &-text
+        width: calc(50% - 105px)
+    &-row
+        display: flex
+        flex-wrap: wrap
+        gap: 20px 105px
+        
+    &-statistics
+        width: 50%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 20px 113px
+        .statistics-item
+            width: max-content
+            height: max-content
+            padding: 26px 20px
+            border-radius: 16px
+            background-color: rgba(50, 164, 97, 0.38)
+            display: flex
+            &--languages
+                margin-top: 56px
+            &--countries
+                margin-left: 82px
+            .item
+                &-icon
+                    margin-right: 11px
+                &-title
+                    color: #FFF
+                    font-size: 24px
+                    font-weight: 600
+                    line-height: 26px
+                    margin: 10px 0
+                &-num
+                    color: #FFF
+                    font-size: 62px
+                    font-weight: 800
+                    line-height: 100%
