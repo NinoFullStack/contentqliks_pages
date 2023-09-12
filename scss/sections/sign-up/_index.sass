@@ -1,0 +1,92 @@
+.sign-up
+    padding: 106px 0 108px
+    background-color: #EAF6EF
+    .container
+        max-width: 950px
+    &__form
+        .form
+            &-fields
+                display: flex
+                flex-wrap: wrap
+                gap: 18px 31px
+                margin-bottom: 51px
+            &-field
+                width: calc(50% - 31px)
+                .field
+                    &-label
+                        color: #333
+                        font-family: 'Open Sans'
+                        font-weight: 600
+                        line-height: 22.857px
+                        margin-bottom: 7px
+                        display: block
+                    &-input
+                        padding: 0 20px
+                        width: 100%
+                        height: 48px
+                        border-radius: 8px
+                        border: 1px solid #E8E8E8
+                        background-color: #FFF
+                        &,
+                        &::placeholder
+                            color: #333
+                            font-family: 'Open Sans'
+                            font-size: 16px
+                            font-weight: 400
+                            line-height: 19px
+            &-title
+                color: #333
+                font-family: 'Open Sans'
+                margin-bottom: 7px
+                font-size: 16px
+                font-weight: 700
+                line-height: 22.857px
+            &-description
+                color: #333
+                font-family: 'Open Sans'
+                font-weight: 400
+                line-height: 26px
+                margin-bottom: 26px
+            &-condition
+                margin-bottom: 48px
+                &__label
+                    padding-left: 23px
+                    position: relative
+                    display: flex
+                    align-items: center
+                    &,
+                    a
+                        color: #333
+                        font-family: 'Open Sans'
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 21.429px
+                    &::before
+                        content: ''
+                        position: absolute
+                        left: 0
+                        width: 14px
+                        height: 14px
+                        border-radius: 2.5px
+                        border: 1px solid #32A461
+                        background-color: #FFF
+                    a
+                        color: #32A461
+                        margin: 0 4px
+                    &:hover
+                        cursor: pointer
+                &__checkbox
+                    display: none
+                    &:checked + .form-condition__label::before
+                        background-color: #32A461
+            &-btn
+                color: #FFF
+                font-family: Roboto
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                text-transform: uppercase
+                padding: 10px 74px
+                border-radius: 30px
+                background-color: #32A461
