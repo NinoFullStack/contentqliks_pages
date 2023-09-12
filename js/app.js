@@ -5,12 +5,25 @@ new Swiper('#featured-company-slider', {
   autoplay: {
     delay: 2500,
   },
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    400: { slidesPerView: 2 },
+    700: { slidesPerView: 3 },
+    800: { slidesPerView: 4 },
+    1000: { slidesPerView: 6 },
+  },
 })
 
 const spotlightsTechnologiesSlider = new Swiper('.spotlights-technologies', {
   slidesPerView: 4,
   spaceBetween: 25,
   grabCursor: true,
+  breakpoints: {
+    250: { slidesPerView: 1 },
+    470: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1000: { slidesPerView: 4 },
+  },
   on: {
     init() {
       if (this.el.dataset.lastslider) {
@@ -68,4 +81,19 @@ const isViewCounter = () => {
   })
 }
 
+const toggleMenuHeader = () => {
+  const header = document.querySelector('.header')
+  const btn = header?.querySelector('.header-menu')
+
+  btn?.addEventListener('click', () => {
+    header.classList.toggle('header--active')
+    btn.classList.toggle('header-menu--active')
+
+    if (header.classList.contains('header--active')) {
+      document.body.style.overflow = 'hidden'
+    }
+  })
+}
+
 isViewCounter()
+toggleMenuHeader()

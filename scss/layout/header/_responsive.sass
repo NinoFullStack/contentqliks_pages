@@ -1,0 +1,41 @@
+@media (max-width: 1200px)
+    .header
+        &-wraper
+            display: none
+        &-menu
+            display: flex
+    
+@media (max-width: 930px)
+    .header-home
+        &__items
+            flex-direction: column
+            gap: 50px
+        &__item
+            width: 100%
+        &__title
+            font-size: 50px
+
+@media (max-width: 675px)
+    .header-home
+        &__title
+            font-size: 40px
+            display: block
+            margin-top: 80px
+        &__items
+            margin-top: 80px
+
+@media (max-width: 450px)
+    .header-home
+        &__title
+            font-size: 25px
+        &__items
+            gap: 20px
+        &__item
+            .item
+                &-wraper
+                    gap: 20px 40px
+                &-num
+                    font-size: 35px
+                    line-height: 30.2px
+                &-description
+                    font-size: 20px

@@ -1,0 +1,29 @@
+@media (max-width: 1135px)
+    .footer
+        &-row
+            gap: 40px
+            justify-content: space-between
+        &-form
+            width: calc(60% - 144px)
+
+@media (max-width: 940px)
+    .footer-title  
+        font-size: 26px
+        margin-bottom: 5px
+
+@media (max-width: 850px)
+    .footer
+        &-title
+            font-size: 19px
+        &-row
+            flex-direction: column
+        &-text
+            width: 100%
+        &-form
+            width: 100%
+        &-basement 
+            .basement-row
+                flex-direction: column
+                gap: 10px
+                &:last-child
+                    margin-top: 35px

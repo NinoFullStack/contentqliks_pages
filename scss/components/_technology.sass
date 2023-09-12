@@ -29,6 +29,7 @@
         .list
             &-row
                 display: flex
+                flex-wrap: wrap
             &-item
                 color: #333
                 font-family: Roboto
@@ -40,6 +41,7 @@
                 margin-bottom: 1px
                 display: flex
                 flex-direction: column
+                white-space: nowrap
                 &:before
                     content: ''
                     width: 4px
@@ -49,3 +51,7 @@
                     left: 10px
                     top: 7px
             
+@media (max-width: 470px)
+    .technology
+        width: max-content
+        margin: 0 auto

@@ -1,0 +1,33 @@
+@media (max-width: 1135px)
+    .about
+        &-row
+            gap: 20px 50px
+        &-statistics
+            gap: 20px
+
+@media (max-width: 940px)
+    .about
+        background-position: top center, center
+        &-text
+            width: calc(70% - 50px)
+        &-statistics
+            width: 30%
+            flex-direction: column
+            align-items: center
+            .statistics-item
+                margin: 0
+                width: 100%
+
+@media (max-width: 768px)
+    .about
+        &-row
+            flex-direction: column
+            gap: 40px
+        &-text
+            width: 100%
+        &-statistics
+            width: 100%
+            flex-direction: row
+            justify-content: center
+            .statistics-item
+                width: max-content
