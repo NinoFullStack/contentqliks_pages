@@ -62,3 +62,50 @@
         .resource
             &-title
                 margin-bottom: 14px
+
+
+@media (max-width: 1020px) 
+    .resources
+        justify-content: center
+    .resource
+        flex-direction: column
+        align-items: center
+        text-align: center
+        padding: 30px
+        &-img
+            margin: 0 0 20px
+        &-text
+            align-items: center
+        &-title
+            font-size: 18px
+        &--description
+            .resource
+                &-row
+                    flex-direction: column
+                &-date
+                    gap: 20px
+                    flex-wrap: wrap
+
+
+@media (max-width: 700px)
+    .resource
+        width: 100%
+        flex-direction: row
+        text-align: start
+        &-img
+            margin-right: 30px
+        &-text
+            align-items: start
+
+@media (max-width: 500px)
+    .resource
+        flex-direction: column
+        align-items: center
+        text-align: center
+        padding: 30px
+        &-img
+            margin: 0 0 20px
+        &-text
+            align-items: center
+        &-title
+            font-size: 18px

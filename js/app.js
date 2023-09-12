@@ -91,6 +91,8 @@ const toggleMenuHeader = () => {
 
     if (header.classList.contains('header--active')) {
       document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
     }
   })
 }
