@@ -33,6 +33,18 @@ const spotlightsTechnologiesSlider = new Swiper('.spotlights-technologies', {
   },
 })
 
+const sliceText = items => {
+  items.forEach(({ elements, length }) => {
+    elements.forEach(el => {
+      if (el.textContent.length >= length) {
+        el.textContent = el.textContent.trim().slice(0, length) + '...'
+      } else {
+        el.style['min-height'] = 0
+      }
+    })
+  })
+}
+
 const counterUp = (interval = 1) => {
   const counterItems = document.querySelectorAll('[data-counter]')
 
@@ -99,3 +111,14 @@ const toggleMenuHeader = () => {
 
 isViewCounter()
 toggleMenuHeader()
+
+sliceText([
+  {
+    length: 150,
+    elements: document.querySelectorAll('.company-description'),
+  },
+  {
+    length: 30,
+    elements: document.querySelectorAll('.company-title'),
+  },
+])

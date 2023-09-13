@@ -34,6 +34,25 @@
                             font-size: 16px
                             font-weight: 400
                             line-height: 19px
+                    &-select
+                        position: relative
+                        display: flex
+                        align-items: center
+                        &::before
+                            content: url('../img/select-arrow.svg')
+                            width: 20px
+                            height: 100%
+                            position: absolute
+                            top: 0
+                            right: 20px
+                            background-repeat: no-repeat
+                            background-size: 20px
+                            background-position: center
+                            display: flex
+                            align-items: center
+                            margin-top: 2px
+                        select 
+                            appearance: none
             &-title
                 color: #333
                 font-family: 'Open Sans'
